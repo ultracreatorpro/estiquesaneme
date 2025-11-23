@@ -20,6 +20,11 @@
       gtag('js', new Date());
       gtag('config', 'G-3VBH1231DD');
     </script>
+    
+    <!-- Script de Adsterra -->
+    <script async="async" data-cfasync="false" src="//pl28096399.effectivegatecpm.com/a085943cd6533d3aa156229d785c274a/invoke.js"></script>
+<div id="container-a085943cd6533d3aa156229d785c274a"></div>
+    
     <style>
         * {
             margin: 0;
@@ -554,19 +559,14 @@
                 `;
                 container.innerHTML += packElement;
 
-                // Insertar publicidad después del segundo pack
-                if (index === 2) {
+                // Insertar publicidad de Adsterra después del primer pack (debajo de Pack 1 de memes)
+                if (index === 0) {
                     const adElement = `
-                        <div class="ad-banner">
-                            <img src="${adConfig.image}" alt="Publicidad" class="ad-image">
-                            <div class="ad-content">
-                                <div class="ad-title">${adConfig.title}</div>
-                                <div class="ad-description">${adConfig.description}</div>
-                            </div>
-                            <a href="${adConfig.link}" target="_blank" class="ad-button">
-                                ${adConfig.buttonText}
-                            </a>
+                        <!-- COMIENZO DEL CÓDIGO DE ADSTERRA -->
+                        <div class="ad-banner" style="justify-content: center; text-align: center; padding: 20px;">
+                            <div id="container-a085943cd6533d3aa156229d785c274a"></div>
                         </div>
+                        <!-- FIN DEL CÓDIGO DE ADSTERRA -->
                     `;
                     container.innerHTML += adElement;
                 }
@@ -577,19 +577,8 @@
         displayStickerPacks();
     </script>
 
-    <script async="async" data-cfasync="false" src="//pl28096399.effectivegatecpm.com/a085943cd6533d3aa156229d785c274a/invoke.js"></script>
+<script async="async" data-cfasync="false" src="//pl28096399.effectivegatecpm.com/a085943cd6533d3aa156229d785c274a/invoke.js"></script>
 <div id="container-a085943cd6533d3aa156229d785c274a"></div>
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
